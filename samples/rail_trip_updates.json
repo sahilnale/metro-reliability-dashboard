@@ -1,0 +1,3396 @@
+[
+  {
+    "id": "64155257_1162-1179_52920",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155257",
+        "startTime": "14:42:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791158337"
+          },
+          "stopId": "801103",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1162-1179"
+      },
+      "timestamp": "1791158290"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155135_1153_53220",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155135",
+        "startTime": "14:47:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791158319"
+          },
+          "stopId": "80154",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791158415"
+          },
+          "stopId": "80153",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 47,
+          "arrival": {
+            "time": "1791158666"
+          },
+          "stopId": "80101",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1153"
+      },
+      "timestamp": "1791158290"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155118_1097-1131_53520",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155118",
+        "startTime": "14:52:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791158386"
+          },
+          "stopId": "801102",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791158484"
+          },
+          "stopId": "801103",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1097-1131"
+      },
+      "timestamp": "1791158291"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155149_1133_53820",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155149",
+        "startTime": "14:57:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791158293"
+          },
+          "stopId": "80109",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791158524"
+          },
+          "stopId": "80108",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791158662"
+          },
+          "stopId": "80107",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 43,
+          "arrival": {
+            "time": "1791158785"
+          },
+          "stopId": "80106",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 44,
+          "arrival": {
+            "time": "1791158876"
+          },
+          "stopId": "80105",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791159017"
+          },
+          "stopId": "80154",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791159132"
+          },
+          "stopId": "80153",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 47,
+          "arrival": {
+            "time": "1791159481"
+          },
+          "stopId": "80101",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1133"
+      },
+      "timestamp": "1791158289"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155131_167_54120",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155131",
+        "startTime": "15:02:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791158082"
+          },
+          "stopId": "80427",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 43,
+          "arrival": {
+            "time": "1791158236"
+          },
+          "stopId": "801100",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 44,
+          "arrival": {
+            "time": "1791158469"
+          },
+          "stopId": "801101",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791158680"
+          },
+          "stopId": "801102",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791158818"
+          },
+          "stopId": "801103",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "167"
+      },
+      "timestamp": "1791158237"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155251_713-726_54420",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155251",
+        "startTime": "15:07:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791158220"
+          },
+          "stopId": "80112",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791158456"
+          },
+          "stopId": "80111",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791158643"
+          },
+          "stopId": "80110",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791158849"
+          },
+          "stopId": "80109",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791159073"
+          },
+          "stopId": "80108",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791159219"
+          },
+          "stopId": "80107",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 43,
+          "arrival": {
+            "time": "1791159661"
+          },
+          "stopId": "80106",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 44,
+          "arrival": {
+            "time": "1791159793"
+          },
+          "stopId": "80105",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791159957"
+          },
+          "stopId": "80154",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791160019"
+          },
+          "stopId": "80153",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 47,
+          "arrival": {
+            "time": "1791160230"
+          },
+          "stopId": "80101",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "713-726"
+      },
+      "timestamp": "1791158200"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155183_156_54720",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155183",
+        "startTime": "15:12:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791158417"
+          },
+          "stopId": "80422",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791158576"
+          },
+          "stopId": "80423",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791158777"
+          },
+          "stopId": "80424",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791158967"
+          },
+          "stopId": "80425",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791159135"
+          },
+          "stopId": "80426",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791159243"
+          },
+          "stopId": "80427",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 43,
+          "arrival": {
+            "time": "1791159408"
+          },
+          "stopId": "801100",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 44,
+          "arrival": {
+            "time": "1791159750"
+          },
+          "stopId": "801101",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791159953"
+          },
+          "stopId": "801102",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791160085"
+          },
+          "stopId": "801103",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "156"
+      },
+      "timestamp": "1791158241"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155138_1146-1174_55020",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155138",
+        "startTime": "15:17:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791158403"
+          },
+          "stopId": "80116",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791158521"
+          },
+          "stopId": "80115",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791158634"
+          },
+          "stopId": "80114",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791158766"
+          },
+          "stopId": "80113",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791158927"
+          },
+          "stopId": "80112",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791159159"
+          },
+          "stopId": "80111",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791159330"
+          },
+          "stopId": "80110",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791159532"
+          },
+          "stopId": "80109",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791159779"
+          },
+          "stopId": "80108",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791159902"
+          },
+          "stopId": "80107",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 43,
+          "arrival": {
+            "time": "1791160132"
+          },
+          "stopId": "80106",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 44,
+          "arrival": {
+            "time": "1791160214"
+          },
+          "stopId": "80105",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791160330"
+          },
+          "stopId": "80154",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791160430"
+          },
+          "stopId": "80153",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 47,
+          "arrival": {
+            "time": "1791160549"
+          },
+          "stopId": "80101",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1146-1174"
+      },
+      "timestamp": "1791158291"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155113_1114-1115_55320",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155113",
+        "startTime": "15:22:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791158313"
+          },
+          "stopId": "80420",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791158505"
+          },
+          "stopId": "80421",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791158789"
+          },
+          "stopId": "80422",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791158931"
+          },
+          "stopId": "80423",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791159148"
+          },
+          "stopId": "80424",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791159328"
+          },
+          "stopId": "80425",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791159497"
+          },
+          "stopId": "80426",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791159606"
+          },
+          "stopId": "80427",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 43,
+          "arrival": {
+            "time": "1791159761"
+          },
+          "stopId": "801100",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 44,
+          "arrival": {
+            "time": "1791160104"
+          },
+          "stopId": "801101",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 45,
+          "arrival": {
+            "time": "1791160306"
+          },
+          "stopId": "801102",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 46,
+          "arrival": {
+            "time": "1791160437"
+          },
+          "stopId": "801103",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1114-1115"
+      },
+      "timestamp": "1791158293"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "65116835_535-536-537-538-545-546_55500",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "65116835",
+        "startTime": "15:25:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "805",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 6,
+          "arrival": {
+            "time": "1791158314"
+          },
+          "stopId": "80209",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 7,
+          "arrival": {
+            "time": "1791158497"
+          },
+          "stopId": "80210",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 8,
+          "arrival": {
+            "time": "1791158608"
+          },
+          "stopId": "80211",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 9,
+          "arrival": {
+            "time": "1791158712"
+          },
+          "stopId": "80212",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 10,
+          "arrival": {
+            "time": "1791158799"
+          },
+          "stopId": "80213",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 11,
+          "arrival": {
+            "time": "1791158931"
+          },
+          "stopId": "80214",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "535-536-537-538-545-546"
+      },
+      "timestamp": "1791158265"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155266_1137-1166_55620",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155266",
+        "startTime": "15:27:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791158370"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791158642"
+          },
+          "stopId": "80120",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791158870"
+          },
+          "stopId": "80119",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791159091"
+          },
+          "stopId": "80118",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791159189"
+          },
+          "stopId": "80117",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791159347"
+          },
+          "stopId": "80116",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791159462"
+          },
+          "stopId": "80115",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791159580"
+          },
+          "stopId": "80114",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791159707"
+          },
+          "stopId": "80113",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791159842"
+          },
+          "stopId": "80112",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791160080"
+          },
+          "stopId": "80111",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791160229"
+          },
+          "stopId": "80110",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791160418"
+          },
+          "stopId": "80109",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791160653"
+          },
+          "stopId": "80108",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791160787"
+          },
+          "stopId": "80107",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1137-1166"
+      },
+      "timestamp": "1791158292"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155265_1141_55920",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155265",
+        "startTime": "15:32:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791158333"
+          },
+          "stopId": "80414",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791158547"
+          },
+          "stopId": "80415",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791158718"
+          },
+          "stopId": "80416",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791158835"
+          },
+          "stopId": "80417",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791158918"
+          },
+          "stopId": "80418",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791159042"
+          },
+          "stopId": "80419",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791159176"
+          },
+          "stopId": "80420",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791159352"
+          },
+          "stopId": "80421",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791159618"
+          },
+          "stopId": "80422",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791159783"
+          },
+          "stopId": "80423",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791160011"
+          },
+          "stopId": "80424",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791160197"
+          },
+          "stopId": "80425",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791160364"
+          },
+          "stopId": "80426",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791160472"
+          },
+          "stopId": "80427",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 43,
+          "arrival": {
+            "time": "1791160630"
+          },
+          "stopId": "801100",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 44,
+          "arrival": {
+            "time": "1791160976"
+          },
+          "stopId": "801101",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1141"
+      },
+      "timestamp": "1791158289"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155139_1109-1163_56220",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155139",
+        "startTime": "15:37:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791158310"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791158400"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791158514"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791158600"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791158886"
+          },
+          "stopId": "80120",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791159053"
+          },
+          "stopId": "80119",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791159229"
+          },
+          "stopId": "80118",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791159361"
+          },
+          "stopId": "80117",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791159516"
+          },
+          "stopId": "80116",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791159629"
+          },
+          "stopId": "80115",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791159749"
+          },
+          "stopId": "80114",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791159877"
+          },
+          "stopId": "80113",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791160002"
+          },
+          "stopId": "80112",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791160244"
+          },
+          "stopId": "80111",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791160408"
+          },
+          "stopId": "80110",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791160594"
+          },
+          "stopId": "80109",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791160814"
+          },
+          "stopId": "80108",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791160945"
+          },
+          "stopId": "80107",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1109-1163"
+      },
+      "timestamp": "1791158293"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155162_1180_56520",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155162",
+        "startTime": "15:42:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791158355"
+          },
+          "stopId": "80412",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791158483"
+          },
+          "stopId": "80413",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791158732"
+          },
+          "stopId": "80414",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791158948"
+          },
+          "stopId": "80415",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791159128"
+          },
+          "stopId": "80416",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791159324"
+          },
+          "stopId": "80417",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791159386"
+          },
+          "stopId": "80418",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791159489"
+          },
+          "stopId": "80419",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791159609"
+          },
+          "stopId": "80420",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791159793"
+          },
+          "stopId": "80421",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791160066"
+          },
+          "stopId": "80422",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791160240"
+          },
+          "stopId": "80423",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791160540"
+          },
+          "stopId": "80424",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791160725"
+          },
+          "stopId": "80425",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791160866"
+          },
+          "stopId": "80426",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791160971"
+          },
+          "stopId": "80427",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1180"
+      },
+      "timestamp": "1791158290"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155282_block_162_schedBasedVehicle_56820",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155282",
+        "startTime": "15:47:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791158223",
+            "uncertainty": 300
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791158307",
+            "uncertainty": 300
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791158411",
+            "uncertainty": 300
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791158530",
+            "uncertainty": 300
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791158788",
+            "uncertainty": 300
+          },
+          "stopId": "80120",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791158988",
+            "uncertainty": 300
+          },
+          "stopId": "80119",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791159208",
+            "uncertainty": 300
+          },
+          "stopId": "80118",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791159346",
+            "uncertainty": 300
+          },
+          "stopId": "80117",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791159506",
+            "uncertainty": 300
+          },
+          "stopId": "80116",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791159633",
+            "uncertainty": 300
+          },
+          "stopId": "80115",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791159757",
+            "uncertainty": 300
+          },
+          "stopId": "80114",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791159886",
+            "uncertainty": 300
+          },
+          "stopId": "80113",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791160039",
+            "uncertainty": 300
+          },
+          "stopId": "80112",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791160265",
+            "uncertainty": 300
+          },
+          "stopId": "80111",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791160432",
+            "uncertainty": 300
+          },
+          "stopId": "80110",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 40,
+          "arrival": {
+            "time": "1791160621",
+            "uncertainty": 300
+          },
+          "stopId": "80109",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 41,
+          "arrival": {
+            "time": "1791160839",
+            "uncertainty": 300
+          },
+          "stopId": "80108",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 42,
+          "arrival": {
+            "time": "1791160971",
+            "uncertainty": 300
+          },
+          "stopId": "80107",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "block_162_schedBasedVehicle"
+      },
+      "timestamp": "1791156554"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155136_152_57120",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155136",
+        "startTime": "15:52:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791158301"
+          },
+          "stopId": "80409",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791158616"
+          },
+          "stopId": "80410",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791158773"
+          },
+          "stopId": "80411",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791158868"
+          },
+          "stopId": "80412",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791158984"
+          },
+          "stopId": "80413",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791159207"
+          },
+          "stopId": "80414",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791159409"
+          },
+          "stopId": "80415",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791159605"
+          },
+          "stopId": "80416",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791159717"
+          },
+          "stopId": "80417",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791159802"
+          },
+          "stopId": "80418",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791159910"
+          },
+          "stopId": "80419",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791160023"
+          },
+          "stopId": "80420",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791160199"
+          },
+          "stopId": "80421",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791160458"
+          },
+          "stopId": "80422",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 38,
+          "arrival": {
+            "time": "1791160620"
+          },
+          "stopId": "80423",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 39,
+          "arrival": {
+            "time": "1791160814"
+          },
+          "stopId": "80424",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "152"
+      },
+      "timestamp": "1791158241"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "65116720_535-536-537-538-545-546_57120",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "65116720",
+        "startTime": "15:52:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "805",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 1,
+          "departure": {
+            "time": "1791158991"
+          },
+          "stopId": "80214",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 2,
+          "arrival": {
+            "time": "1791159123"
+          },
+          "stopId": "80213",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 3,
+          "arrival": {
+            "time": "1791159245"
+          },
+          "stopId": "80212",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 4,
+          "arrival": {
+            "time": "1791159413"
+          },
+          "stopId": "80211",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 5,
+          "arrival": {
+            "time": "1791159626"
+          },
+          "stopId": "80210",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 6,
+          "arrival": {
+            "time": "1791159807"
+          },
+          "stopId": "80209",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 7,
+          "arrival": {
+            "time": "1791159962"
+          },
+          "stopId": "80215",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 8,
+          "arrival": {
+            "time": "1791160117"
+          },
+          "stopId": "80216",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 9,
+          "arrival": {
+            "time": "1791160294"
+          },
+          "stopId": "80229",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 10,
+          "arrival": {
+            "time": "1791160436"
+          },
+          "stopId": "80230",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 11,
+          "arrival": {
+            "time": "1791160620"
+          },
+          "stopId": "80231",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "535-536-537-538-545-546"
+      },
+      "timestamp": "1791158265"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64425048_1047-1052-1054_57300",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64425048",
+        "startTime": "15:55:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "804",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791158373"
+          },
+          "stopId": "80135",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791158496"
+          },
+          "stopId": "80136",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791158618"
+          },
+          "stopId": "80137",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791158762"
+          },
+          "stopId": "80138",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791158926"
+          },
+          "stopId": "80139",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1047-1052-1054"
+      },
+      "timestamp": "1791158290"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155173_106_57420",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155173",
+        "startTime": "15:57:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 19,
+          "arrival": {
+            "time": "1791158328"
+          },
+          "stopId": "80413",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791158447"
+          },
+          "stopId": "80412",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791158543"
+          },
+          "stopId": "80411",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791158700"
+          },
+          "stopId": "80410",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791158852"
+          },
+          "stopId": "80409",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791159232"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791159352"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791159451"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791159587"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791159750"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791159983"
+          },
+          "stopId": "80120",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791160155"
+          },
+          "stopId": "80119",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791160375"
+          },
+          "stopId": "80118",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791160515"
+          },
+          "stopId": "80117",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791160670"
+          },
+          "stopId": "80116",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791160789"
+          },
+          "stopId": "80115",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791160911"
+          },
+          "stopId": "80114",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "106"
+      },
+      "timestamp": "1791158247"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64424927_1065-1081-1088_57540",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64424927",
+        "startTime": "15:59:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "804",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791158319"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791158472"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791158646"
+          },
+          "stopId": "80407",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791158734"
+          },
+          "stopId": "80406",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791158826"
+          },
+          "stopId": "80405",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791159012"
+          },
+          "stopId": "80404",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791159258"
+          },
+          "stopId": "80403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791159345"
+          },
+          "stopId": "80402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791159476"
+          },
+          "stopId": "80401",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1065-1081-1088"
+      },
+      "timestamp": "1791158286"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155163_1156-1171_57720",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155163",
+        "startTime": "16:02:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791158133"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791158345"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791158444"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791158609"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791158808"
+          },
+          "stopId": "80409",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791159008"
+          },
+          "stopId": "80410",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791159176"
+          },
+          "stopId": "80411",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791159263"
+          },
+          "stopId": "80412",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791159381"
+          },
+          "stopId": "80413",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791159626"
+          },
+          "stopId": "80414",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791159825"
+          },
+          "stopId": "80415",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791159978"
+          },
+          "stopId": "80416",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791160175"
+          },
+          "stopId": "80417",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791160219"
+          },
+          "stopId": "80418",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791160314"
+          },
+          "stopId": "80419",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 35,
+          "arrival": {
+            "time": "1791160455"
+          },
+          "stopId": "80420",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 36,
+          "arrival": {
+            "time": "1791160664"
+          },
+          "stopId": "80421",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 37,
+          "arrival": {
+            "time": "1791160933"
+          },
+          "stopId": "80422",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1156-1171"
+      },
+      "timestamp": "1791158289"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64424953_1071-1079-1086_57900",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64424953",
+        "startTime": "16:05:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "804",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 4,
+          "arrival": {
+            "time": "1791158480"
+          },
+          "stopId": "80404",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 5,
+          "arrival": {
+            "time": "1791158652"
+          },
+          "stopId": "80405",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 6,
+          "arrival": {
+            "time": "1791158753"
+          },
+          "stopId": "80406",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 7,
+          "arrival": {
+            "time": "1791158861"
+          },
+          "stopId": "80407",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 8,
+          "arrival": {
+            "time": "1791159051"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 9,
+          "arrival": {
+            "time": "1791159153"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 10,
+          "arrival": {
+            "time": "1791159225"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 11,
+          "arrival": {
+            "time": "1791159350"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 12,
+          "arrival": {
+            "time": "1791159453"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 13,
+          "arrival": {
+            "time": "1791159768"
+          },
+          "stopId": "80123",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 14,
+          "arrival": {
+            "time": "1791159886"
+          },
+          "stopId": "80124",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 15,
+          "arrival": {
+            "time": "1791160005"
+          },
+          "stopId": "80125",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 16,
+          "arrival": {
+            "time": "1791160095"
+          },
+          "stopId": "80126",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 17,
+          "arrival": {
+            "time": "1791160264"
+          },
+          "stopId": "80127",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 18,
+          "arrival": {
+            "time": "1791160506"
+          },
+          "stopId": "80128",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 19,
+          "arrival": {
+            "time": "1791160612"
+          },
+          "stopId": "80129",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791160706"
+          },
+          "stopId": "80130",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791160817"
+          },
+          "stopId": "80131",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791160951"
+          },
+          "stopId": "80132",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1071-1079-1086"
+      },
+      "timestamp": "1791158292"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155290_1111-1118_58020",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155290",
+        "startTime": "16:07:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 18,
+          "arrival": {
+            "time": "1791158333"
+          },
+          "stopId": "80414",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 19,
+          "arrival": {
+            "time": "1791158579"
+          },
+          "stopId": "80413",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791158690"
+          },
+          "stopId": "80412",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791158805"
+          },
+          "stopId": "80411",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791158933"
+          },
+          "stopId": "80410",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791159073"
+          },
+          "stopId": "80409",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791159466"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791159594"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791159676"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791159794"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791159901"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791160139"
+          },
+          "stopId": "80120",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791160341"
+          },
+          "stopId": "80119",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 31,
+          "arrival": {
+            "time": "1791160542"
+          },
+          "stopId": "80118",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 32,
+          "arrival": {
+            "time": "1791160673"
+          },
+          "stopId": "80117",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 33,
+          "arrival": {
+            "time": "1791160830"
+          },
+          "stopId": "80116",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 34,
+          "arrival": {
+            "time": "1791160951"
+          },
+          "stopId": "80115",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1111-1118"
+      },
+      "timestamp": "1791158292"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64425059_1062-1087-1094_58140",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64425059",
+        "startTime": "16:09:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "804",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791158376"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791158460"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791158619"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791158776"
+          },
+          "stopId": "80407",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791158868"
+          },
+          "stopId": "80406",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791158963"
+          },
+          "stopId": "80405",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791159132"
+          },
+          "stopId": "80404",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791159353"
+          },
+          "stopId": "80403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791159450"
+          },
+          "stopId": "80402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791159571"
+          },
+          "stopId": "80401",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1062-1087-1094"
+      },
+      "timestamp": "1791158291"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "65116722_203_58200",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "65116722",
+        "startTime": "16:10:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "805",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 10,
+          "arrival": {
+            "time": "1791158340"
+          },
+          "stopId": "80230",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 11,
+          "arrival": {
+            "time": "1791158502"
+          },
+          "stopId": "80231",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "203"
+      },
+      "timestamp": "1791158269"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155184_1139_58320",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155184",
+        "startTime": "16:12:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 16,
+          "arrival": {
+            "time": "1791158384"
+          },
+          "stopId": "80118",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 17,
+          "arrival": {
+            "time": "1791158605"
+          },
+          "stopId": "80119",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 18,
+          "arrival": {
+            "time": "1791158810"
+          },
+          "stopId": "80120",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 19,
+          "arrival": {
+            "time": "1791159157"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791159254"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791159390"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791159495"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791159658"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791159834"
+          },
+          "stopId": "80409",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791160064"
+          },
+          "stopId": "80410",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791160237"
+          },
+          "stopId": "80411",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791160317"
+          },
+          "stopId": "80412",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791160427"
+          },
+          "stopId": "80413",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791160666"
+          },
+          "stopId": "80414",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 30,
+          "arrival": {
+            "time": "1791160873"
+          },
+          "stopId": "80415",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1139"
+      },
+      "timestamp": "1791158291"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64424933_1015-1043-1053_58500",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64424933",
+        "startTime": "16:15:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "804",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 1,
+          "departure": {
+            "time": "1791158295"
+          },
+          "stopId": "80401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 2,
+          "arrival": {
+            "time": "1791158373"
+          },
+          "stopId": "80402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 3,
+          "arrival": {
+            "time": "1791158454"
+          },
+          "stopId": "80403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 4,
+          "arrival": {
+            "time": "1791158669"
+          },
+          "stopId": "80404",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 5,
+          "arrival": {
+            "time": "1791158824"
+          },
+          "stopId": "80405",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 6,
+          "arrival": {
+            "time": "1791158950"
+          },
+          "stopId": "80406",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 7,
+          "arrival": {
+            "time": "1791159058"
+          },
+          "stopId": "80407",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 8,
+          "arrival": {
+            "time": "1791159208"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 9,
+          "arrival": {
+            "time": "1791159300"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 10,
+          "arrival": {
+            "time": "1791159394"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 11,
+          "arrival": {
+            "time": "1791159519"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 12,
+          "arrival": {
+            "time": "1791159639"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 13,
+          "arrival": {
+            "time": "1791159852"
+          },
+          "stopId": "80123",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 14,
+          "arrival": {
+            "time": "1791160067"
+          },
+          "stopId": "80124",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 15,
+          "arrival": {
+            "time": "1791160148"
+          },
+          "stopId": "80125",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 16,
+          "arrival": {
+            "time": "1791160222"
+          },
+          "stopId": "80126",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 17,
+          "arrival": {
+            "time": "1791160516"
+          },
+          "stopId": "80127",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 18,
+          "arrival": {
+            "time": "1791160753"
+          },
+          "stopId": "80128",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 19,
+          "arrival": {
+            "time": "1791160856"
+          },
+          "stopId": "80129",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791160971"
+          },
+          "stopId": "80130",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1015-1043-1053"
+      },
+      "timestamp": "1791158293"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64155165_712-714_58620",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64155165",
+        "startTime": "16:17:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "801",
+        "directionId": 1
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 12,
+          "arrival": {
+            "time": "1791158378"
+          },
+          "stopId": "80420",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 13,
+          "arrival": {
+            "time": "1791158512"
+          },
+          "stopId": "80419",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 14,
+          "arrival": {
+            "time": "1791158634"
+          },
+          "stopId": "80418",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 15,
+          "arrival": {
+            "time": "1791158700"
+          },
+          "stopId": "80417",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 16,
+          "arrival": {
+            "time": "1791158792"
+          },
+          "stopId": "80416",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 17,
+          "arrival": {
+            "time": "1791158989"
+          },
+          "stopId": "80415",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 18,
+          "arrival": {
+            "time": "1791159208"
+          },
+          "stopId": "80414",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 19,
+          "arrival": {
+            "time": "1791159438"
+          },
+          "stopId": "80413",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791159556"
+          },
+          "stopId": "80412",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791159650"
+          },
+          "stopId": "80411",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791159795"
+          },
+          "stopId": "80410",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791159941"
+          },
+          "stopId": "80409",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791160310"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791160442"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791160539"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791160656"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791160786"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "712-714"
+      },
+      "timestamp": "1791158243"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "64424938_1057-1076-1083_58740",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "64424938",
+        "startTime": "16:19:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "804",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 18,
+          "arrival": {
+            "time": "1791158511"
+          },
+          "stopId": "80121",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 19,
+          "arrival": {
+            "time": "1791158624"
+          },
+          "stopId": "80122",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 20,
+          "arrival": {
+            "time": "1791158751"
+          },
+          "stopId": "81401",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 21,
+          "arrival": {
+            "time": "1791158837"
+          },
+          "stopId": "81402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 22,
+          "arrival": {
+            "time": "1791158984"
+          },
+          "stopId": "81403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 23,
+          "arrival": {
+            "time": "1791159149"
+          },
+          "stopId": "80407",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 24,
+          "arrival": {
+            "time": "1791159222"
+          },
+          "stopId": "80406",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 25,
+          "arrival": {
+            "time": "1791159319"
+          },
+          "stopId": "80405",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 26,
+          "arrival": {
+            "time": "1791159523"
+          },
+          "stopId": "80404",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 27,
+          "arrival": {
+            "time": "1791159750"
+          },
+          "stopId": "80403",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 28,
+          "arrival": {
+            "time": "1791159832"
+          },
+          "stopId": "80402",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 29,
+          "arrival": {
+            "time": "1791159929"
+          },
+          "stopId": "80401",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "1057-1076-1083"
+      },
+      "timestamp": "1791158293"
+    },
+    "route_code": ""
+  },
+  {
+    "id": "65116811_535-536-537-538-545-546_58740",
+    "tripUpdate": {
+      "trip": {
+        "tripId": "65116811",
+        "startTime": "16:19:00",
+        "startDate": "20261004",
+        "scheduleRelationship": "SCHEDULED",
+        "routeId": "805",
+        "directionId": 0
+      },
+      "stopTimeUpdate": [
+        {
+          "stopSequence": 1,
+          "departure": {
+            "time": "1791160680"
+          },
+          "stopId": "80231",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 2,
+          "arrival": {
+            "time": "1791160769"
+          },
+          "stopId": "80230",
+          "scheduleRelationship": "SCHEDULED"
+        },
+        {
+          "stopSequence": 3,
+          "arrival": {
+            "time": "1791160918"
+          },
+          "stopId": "80229",
+          "scheduleRelationship": "SCHEDULED"
+        }
+      ],
+      "vehicle": {
+        "id": "535-536-537-538-545-546"
+      },
+      "timestamp": "1791158265"
+    },
+    "route_code": ""
+  }
+]
