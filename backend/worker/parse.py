@@ -21,6 +21,7 @@ class ParsedStopUpdate:
     predicted_time: datetime | None  # UTC-aware; None when canceled
     canceled: bool
     day_type: str
+    service_date: date
 
 
 def extract_route_code(route_id: str) -> str:
@@ -113,6 +114,7 @@ def parse_trip_update(message: dict) -> list[ParsedStopUpdate]:
                 predicted_time=None,
                 canceled=True,
                 day_type=day_type,
+                service_date=service_date,
             )
         ]
 
@@ -138,6 +140,7 @@ def parse_trip_update(message: dict) -> list[ParsedStopUpdate]:
                 predicted_time=predicted_time,
                 canceled=False,
                 day_type=day_type,
+                service_date=service_date,
             )
         )
     return results
