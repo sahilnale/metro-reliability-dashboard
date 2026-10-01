@@ -95,8 +95,16 @@ class Observation(Base):
     route_id: Mapped[str] = mapped_column(ForeignKey("routes.route_id"))
     stop_id: Mapped[str | None] = mapped_column(ForeignKey("stops.stop_id"), nullable=True)
     trip_id: Mapped[str] = mapped_column(String)
-    scheduled_time: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
-    predicted_time: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    # timezone=True so Postgres normalizes to UTC internally regardless of
+    # which zone the Python datetime was built in -- scheduled_time is
+    # constructed in America/Los_Angeles local time (see worker/parse.py:
+    # local_datetime) while predicted_time arrives as UTC; without this,
+    # a plain DateTime column would silently store both as naive wall-clock
+    # values, 7-8 hours apart from each other, corrupting any SQL-level
+    # comparison between them even though the precomputed delay_seconds
+    # (computed in Python with correct tz math) stays correct.
+    scheduled_time: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    predicted_time: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     delay_seconds: Mapped[int | None] = mapped_column(nullable=True)
     canceled: Mapped[bool] = mapped_column(default=False)
-    observed_at: Mapped[datetime] = mapped_column(DateTime)
+    observed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
