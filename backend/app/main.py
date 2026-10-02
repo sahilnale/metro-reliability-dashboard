@@ -1,7 +1,9 @@
 from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from app import queries
+from app.config import settings
 from app.db import get_session
 from app.schemas import (
     HourlyReliability,
@@ -14,6 +16,15 @@ from app.schemas import (
 app = FastAPI(
     title="Metro Reliability Dashboard API",
     description="How on-time LA Metro bus routes have been, computed from real-time data.",
+)
+
+# The frontend (Vite dev server, later a Vercel domain) runs on a different
+# origin than this API, so without this the browser blocks every request.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.cors_origins,
+    allow_methods=["GET"],
+    allow_headers=["*"],
 )
 
 
@@ -60,7 +71,7 @@ def get_route_reliability_by_hour(
 @app.get("/stops", response_model=list[NearbyStop])
 def get_nearby_stops(
     near: str = Query(..., description="lat,lon"),
-    limit: int = Query(10, ge=1, le=50),
+    limit: int = Query(10, ge=1, le=300),
     db: Session = Depends(get_db),
 ):
     try:
