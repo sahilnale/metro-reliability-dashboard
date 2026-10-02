@@ -63,70 +63,87 @@ def load_routes(session: Session) -> list[dict]:
     return routes
 
 
-def _upsert_stop(session: Session, item: dict) -> None:
-    stop_id = str(item["stop_id"])
-    lon, lat = item["geometry"]["coordinates"]
-    stmt = (
-        pg_insert(Stop)
-        .values(stop_id=stop_id, name=item["stop_name"], lat=lat, lon=lon, agency_id=BUS_AGENCY)
-        .on_conflict_do_update(
-            index_elements=["stop_id"],
-            set_=dict(name=item["stop_name"], lat=lat, lon=lon),
-        )
+def _bulk_upsert_stops(session: Session, stop_rows: list[dict]) -> None:
+    if not stop_rows:
+        return
+    # Dedupe by stop_id within this batch -- ON CONFLICT can't target the
+    # same row twice in one statement ("cannot affect row a second time").
+    by_stop_id = {row["stop_id"]: row for row in stop_rows}
+    stmt = pg_insert(Stop).values(list(by_stop_id.values()))
+    stmt = stmt.on_conflict_do_update(
+        index_elements=["stop_id"],
+        set_=dict(name=stmt.excluded.name, lat=stmt.excluded.lat, lon=stmt.excluded.lon),
     )
     session.execute(stmt)
 
 
-def _upsert_scheduled_departures(
-    session: Session, route_code: str, day_type: str, item: dict
-) -> None:
-    stop_id = str(item["stop_id"])
-    stop_sequence = item["stop_sequence"]
-    # API returns this as a Python-repr string, e.g. "['03:32:00', ...]".
-    raw_times = ast.literal_eval(item["departure_times"])
+def _bulk_upsert_scheduled_departures(session: Session, departure_rows: list[dict]) -> None:
+    if not departure_rows:
+        return
+    # Dedupe within the batch for the same reason as stops above.
     seen = set()
-    for raw in raw_times:
-        t = normalize_gtfs_time(raw)
-        if t in seen:
+    unique_rows = []
+    for row in departure_rows:
+        key = (row["route_id"], row["stop_id"], row["day_type"], row["departure_time"])
+        if key in seen:
             continue
-        seen.add(t)
-        stmt = (
-            pg_insert(ScheduledDeparture)
-            .values(
-                route_id=route_code,
-                stop_id=stop_id,
-                day_type=day_type,
-                stop_sequence=stop_sequence,
-                departure_time=t,
+        seen.add(key)
+        unique_rows.append(row)
+
+    stmt = pg_insert(ScheduledDeparture).values(unique_rows)
+    stmt = stmt.on_conflict_do_nothing(constraint="uq_scheduled_departure")
+    session.execute(stmt)
+
+
+def _rows_for_route_stops(route_code: str, day_type: str, items: list[dict]) -> tuple[list[dict], list[dict]]:
+    stop_rows = []
+    departure_rows = []
+    for item in items:
+        try:
+            stop_id = str(item["stop_id"])
+            lon, lat = item["geometry"]["coordinates"]
+            stop_sequence = item["stop_sequence"]
+            # API returns this as a Python-repr string, e.g. "['03:32:00', ...]".
+            raw_times = ast.literal_eval(item["departure_times"])
+        except (KeyError, ValueError, SyntaxError) as exc:
+            logger.warning("skipping bad route_stops record for route %s: %s", route_code, exc)
+            continue
+
+        stop_rows.append(dict(stop_id=stop_id, name=item["stop_name"], lat=lat, lon=lon, agency_id=BUS_AGENCY))
+        for raw in raw_times:
+            departure_rows.append(
+                dict(
+                    route_id=route_code,
+                    stop_id=stop_id,
+                    day_type=day_type,
+                    stop_sequence=stop_sequence,
+                    departure_time=normalize_gtfs_time(raw),
+                )
             )
-            .on_conflict_do_nothing(constraint="uq_scheduled_departure")
-        )
-        session.execute(stmt)
+    return stop_rows, departure_rows
 
 
 def load_stops_and_schedule(session: Session, routes: list[dict]) -> None:
-    total_stops = 0
+    total_routes_loaded = 0
     for r in routes:
         route_code = str(r["route_code"])
         for day_type in DAY_TYPES:
             try:
-                stops = get_route_stops(BUS_AGENCY, route_code, day_type)
+                items = get_route_stops(BUS_AGENCY, route_code, day_type)
             except requests.RequestException as exc:
                 logger.warning("route_stops failed for route %s/%s: %s", route_code, day_type, exc)
                 continue
 
-            for item in stops:
-                try:
-                    _upsert_stop(session, item)
-                    _upsert_scheduled_departures(session, route_code, day_type, item)
-                    total_stops += 1
-                except (KeyError, ValueError, SyntaxError) as exc:
-                    logger.warning("skipping bad route_stops record for route %s: %s", route_code, exc)
-
+            stop_rows, departure_rows = _rows_for_route_stops(route_code, day_type, items)
+            _bulk_upsert_stops(session, stop_rows)
+            _bulk_upsert_scheduled_departures(session, departure_rows)
             session.commit()
             time_module.sleep(REQUEST_DELAY_SECONDS)
 
-    logger.info("loaded schedule data from %d route/stop records", total_stops)
+        total_routes_loaded += 1
+        logger.info("loaded schedule for route %s (%d/%d)", route_code, total_routes_loaded, len(routes))
+
+    logger.info("loaded schedule data for %d routes", total_routes_loaded)
 
 
 def main() -> None:
