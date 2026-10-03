@@ -426,6 +426,19 @@ button {
   margin: 0;
 }
 
+.zoom-hint {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+  background: rgba(26, 29, 41, 0.78);
+  color: white;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
 /* ---------- Leaflet tweaks ---------- */
 
 .leaflet-control-attribution {
