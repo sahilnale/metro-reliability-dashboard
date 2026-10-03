@@ -1,3 +1,4 @@
+import requests
 from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
@@ -5,13 +6,16 @@ from sqlalchemy.orm import Session
 from app import queries
 from app.config import settings
 from app.db import get_session
+from app.route_path import build_route_path
 from app.schemas import (
     HourlyReliability,
     NearbyStop,
+    RouteDirectionPath,
     RouteReliability,
     RouteSummary,
     StopDelaySummary,
 )
+from worker.metro_client import BUS_AGENCY, get_route_stops
 
 app = FastAPI(
     title="Metro Reliability Dashboard API",
@@ -66,6 +70,17 @@ def get_route_reliability_by_hour(
     if not queries.route_exists(db, route_id):
         raise HTTPException(status_code=404, detail=f"Unknown route_id '{route_id}'")
     return queries.route_reliability_by_hour(db, route_id, days)
+
+
+@app.get("/routes/{route_id}/path", response_model=list[RouteDirectionPath])
+def get_route_path(route_id: str, db: Session = Depends(get_db)):
+    if not queries.route_exists(db, route_id):
+        raise HTTPException(status_code=404, detail=f"Unknown route_id '{route_id}'")
+    try:
+        items = get_route_stops(BUS_AGENCY, route_id, "weekday")
+    except requests.RequestException:
+        raise HTTPException(status_code=502, detail="Metro API is unavailable right now")
+    return build_route_path(items)
 
 
 @app.get("/stops", response_model=list[NearbyStop])

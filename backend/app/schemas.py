@@ -42,6 +42,12 @@ class RecentObservation(BaseModel):
     canceled: bool
 
 
+class RouteDirectionPath(BaseModel):
+    direction_id: int
+    coordinates: list[list[float]]
+    stop_ids: list[str]
+
+
 class StopDelaySummary(BaseModel):
     stop_id: str
     days: int
