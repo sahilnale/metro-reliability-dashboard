@@ -20,6 +20,12 @@ export interface HourlyReliability {
   average_delay_seconds: number | null;
 }
 
+export interface RouteDirectionPath {
+  direction_id: number;
+  coordinates: [number, number][];
+  stop_ids: string[];
+}
+
 export interface NearbyStop {
   stop_id: string;
   name: string;

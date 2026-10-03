@@ -1,6 +1,7 @@
 import type {
   HourlyReliability,
   NearbyStop,
+  RouteDirectionPath,
   RouteReliability,
   RouteSummary,
   StopDelaySummary,
@@ -27,6 +28,10 @@ export function getRouteReliability(routeId: string, days = 7): Promise<RouteRel
 
 export function getRouteReliabilityByHour(routeId: string, days = 7): Promise<HourlyReliability[]> {
   return getJson(`/routes/${encodeURIComponent(routeId)}/by-hour?days=${days}`);
+}
+
+export function getRoutePath(routeId: string): Promise<RouteDirectionPath[]> {
+  return getJson(`/routes/${encodeURIComponent(routeId)}/path`);
 }
 
 export function getNearbyStops(lat: number, lon: number, limit = 20): Promise<NearbyStop[]> {
