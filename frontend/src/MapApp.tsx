@@ -11,7 +11,7 @@ import ZoomTracker from "./components/ZoomTracker";
 import type { NearbyStop, RouteDirectionPath, RouteSummary } from "./types";
 
 const DIRECTION_COLORS = ["#4f46e5", "#f59e0b"];
-const DEFAULT_STOP_COLOR = "#9ca3af";
+const DEFAULT_STOP_COLOR = "#0d9488";
 const SELECTED_STOP_COLOR = "#f59e0b";
 const INITIAL_ZOOM = 14;
 // Below this zoom, the whole-city stop cloud is just visual noise -- only
