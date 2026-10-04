@@ -12,6 +12,20 @@ export default function SearchBar({ routes, search, onSearchChange, onSelectRout
   const results = useMemo(() => {
     if (!search.trim()) return [];
     const q = search.trim().toLowerCase();
+
+    // Rank so an exact or prefix match on the route number (the common
+    // case -- typing "2" for route 2) always beats routes that merely
+    // contain the query as a substring (e.g. "102", "120", "28"), which
+    // would otherwise crowd it out of a plain alphabetical top-8.
+    function rank(r: RouteSummary): number {
+      const id = r.route_id.toLowerCase();
+      const shortName = r.short_name?.toLowerCase() ?? "";
+      if (id === q || shortName === q) return 0;
+      if (id.startsWith(q) || shortName.startsWith(q)) return 1;
+      if (id.includes(q) || shortName.includes(q)) return 2;
+      return 3; // only the long name matched
+    }
+
     return routes
       .filter(
         (r) =>
@@ -19,6 +33,7 @@ export default function SearchBar({ routes, search, onSearchChange, onSelectRout
           r.short_name?.toLowerCase().includes(q) ||
           r.long_name?.toLowerCase().includes(q)
       )
+      .sort((a, b) => rank(a) - rank(b))
       .slice(0, 8);
   }, [routes, search]);
 
