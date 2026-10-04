@@ -1,15 +1,13 @@
 """Streaming ingestion worker.
 
-Holds an open WebSocket connection to Metro's trip_updates feed (bus only --
-see static_loader.py) and upserts delay/cancellation observations into
-Postgres as messages arrive. Reconnects with exponential backoff if the
-connection drops, and skips any single malformed message rather than
-crashing the whole process.
+Holds an open WebSocket connection to Metro's trip_updates feed (bus only)
+and upserts delay/cancellation observations into Postgres as messages
+arrive. Reconnects with exponential backoff if the connection drops, and
+skips any single malformed message rather than crashing the whole process.
 
-Static data (routes, stops, scheduled_departures) must already be loaded
-via `python -m worker.static_loader` before this produces delay numbers --
-without it every stop update is skipped for lack of a scheduled time to
-compare against.
+Route metadata loads eagerly on connect (cheap, ~120 rows). Each route's
+schedule is cached lazily the first time we see it in live traffic -- see
+worker/schedule_cache.py -- so this never requires a slow pre-load step.
 
 Run: python -m worker.stream_worker
 """
@@ -25,7 +23,7 @@ from sqlalchemy.orm import Session
 
 from app.config import settings
 from app.db import get_session
-from app.models import Observation, Route, ScheduledDeparture
+from app.models import Observation, ScheduledDeparture
 from worker.metro_client import BUS_AGENCY
 from worker.parse import (
     LOCAL_TZ,
@@ -35,15 +33,12 @@ from worker.parse import (
     nearest_time,
     parse_trip_update,
 )
+from worker.schedule_cache import ensure_routes_cached, ensure_schedule_cached
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
 MAX_BACKOFF_SECONDS = 60
-
-
-def _known_route_ids(session: Session) -> set[str]:
-    return {row[0] for row in session.execute(select(Route.route_id))}
 
 
 def _scheduled_candidates(session: Session, route_id: str, stop_id: str, day_type: str) -> list:
@@ -80,6 +75,7 @@ def _upsert_cancellation(session: Session, trip_id: str, route_id: str, observed
 
 
 def _upsert_stop_observation(session: Session, update: ParsedStopUpdate, observed_at: datetime) -> bool:
+    ensure_schedule_cached(session, update.route_code, update.day_type)
     candidates = _scheduled_candidates(session, update.route_code, update.stop_id, update.day_type)
     predicted_local_time = update.predicted_time.astimezone(LOCAL_TZ).time()
     nearest = nearest_time(predicted_local_time, candidates)
@@ -148,7 +144,7 @@ async def consume_forever() -> None:
 
                 session = get_session()
                 try:
-                    known_route_ids = _known_route_ids(session)
+                    known_route_ids = ensure_routes_cached(session)
                     logger.info("tracking %d bus routes", len(known_route_ids))
 
                     async for raw in ws:
