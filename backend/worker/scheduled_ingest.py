@@ -32,6 +32,7 @@ import websockets
 from app.config import settings
 from app.db import get_session
 from worker.metro_client import BUS_AGENCY
+from worker.retention import prune_old_observations
 from worker.schedule_cache import ensure_routes_cached
 from worker.stream_worker import handle_message
 from worker import schedule_cache
@@ -94,8 +95,13 @@ async def run_once() -> None:
         logger.warning("connection issue during this burst: %s", exc)
     finally:
         schedule_cache.fetch_deadline = None
+        try:
+            pruned = prune_old_observations(session)
+        except Exception:
+            logger.exception("retention cleanup failed, skipping this run")
+            pruned = 0
         session.close()
-        logger.info("processed %d messages this run", message_count)
+        logger.info("processed %d messages, pruned %d old observations this run", message_count, pruned)
 
 
 if __name__ == "__main__":
