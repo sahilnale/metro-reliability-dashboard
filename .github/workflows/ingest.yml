@@ -1,0 +1,37 @@
+name: Scheduled ingestion
+
+# Runs worker/scheduled_ingest.py every ~10 minutes. This is the free
+# always-on ingestion worker: no hosting platform gives away a free
+# persistent background process, but GitHub Actions is free and unmetered
+# for public repos, so a short burst on a schedule stands in for one.
+#
+# timeout-minutes is the authoritative safety net -- see the docstring in
+# scheduled_ingest.py for why the script's own internal duration target
+# isn't a hard guarantee under a heavy message burst.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: backend/requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      - run: python -m worker.scheduled_ingest
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
