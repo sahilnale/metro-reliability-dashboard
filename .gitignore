@@ -15,3 +15,8 @@ dist/
 
 # OS
 .DS_Store
+.neon
+.env.local
+
+# Neon CLI local skill docs (regenerate with: neon skills -y)
+.claude/skills/
