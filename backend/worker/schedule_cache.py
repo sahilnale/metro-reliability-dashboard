@@ -14,6 +14,7 @@ pays for schedule data it doesn't end up using.
 """
 import ast
 import logging
+import time
 
 import requests
 from sqlalchemy import select
@@ -133,10 +134,38 @@ def is_schedule_cached(session: Session, route_code: str, day_type: str) -> bool
     )
 
 
+# A handful of routes (e.g. "93") have no schedule in Metro's route_stops
+# data at all -- route_stops returns zero rows for them, so the DB check
+# above never finds anything cached and would otherwise re-fetch from the
+# live API on every single message for that route. Tracked in-memory and
+# per-process (not in the DB) since "empty" isn't really cacheable data,
+# just a fact worth not re-querying for during this run.
+_attempted_this_process: set[tuple[str, str]] = set()
+
+
+#: Optional wall-clock deadline (a `time.monotonic()`-style value) past
+#: which ensure_schedule_cached() stops making *new* live fetches. Each
+#: fetch is a blocking `requests` call -- fine when there's no deadline
+#: (the continuous stream_worker), but a bounded burst run (scheduled_ingest)
+#: needs a hard cap, since a fresh DB can hit dozens of cache-misses in a
+#: row and blocking calls can't be preempted by a wall-clock check between
+#: messages. Cache *hits* (the common case after the first run or two)
+#: are an indexed DB lookup and stay unaffected regardless of the deadline.
+fetch_deadline: float | None = None
+
+
 def ensure_schedule_cached(session: Session, route_code: str, day_type: str) -> None:
+    key = (route_code, day_type)
+    if key in _attempted_this_process:
+        return
     if is_schedule_cached(session, route_code, day_type):
+        _attempted_this_process.add(key)
         return
 
+    if fetch_deadline is not None and time.monotonic() > fetch_deadline:
+        return  # out of budget this run; a later run will pick it up
+
+    _attempted_this_process.add(key)
     try:
         items = get_route_stops(BUS_AGENCY, route_code, day_type)
     except requests.RequestException as exc:
