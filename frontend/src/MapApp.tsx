@@ -52,7 +52,15 @@ export default function MapApp() {
       .catch(() => setRoutePath([]));
   }, [selection]);
 
-  const pathBounds: [number, number][] = routePath.flatMap((d) => d.coordinates);
+  // Memoized so this only gets a new reference when routePath itself
+  // changes (a different route gets selected) -- not on every unrelated
+  // re-render (e.g. panning the map merges newly-loaded stops into state,
+  // which would otherwise recreate this array and make FitBounds re-fire
+  // flyToBounds, snapping the view back to the route every time you pan).
+  const pathBounds: [number, number][] = useMemo(
+    () => routePath.flatMap((d) => d.coordinates),
+    [routePath]
+  );
 
   // Built straight from the path response (not the viewport stop cache) so
   // every stop on the route shows up, even ones never panned to yet.
@@ -78,15 +86,22 @@ export default function MapApp() {
     });
   }
 
-  const flyTarget: [number, number] | null =
-    selection.type === "stop"
-      ? (() => {
-          const cached = stops.find((st) => st.stop_id === selection.stopId);
-          if (cached) return [cached.lat, cached.lon];
-          const onPath = routeStopPoints.find((p) => p.stopId === selection.stopId);
-          return onPath ? [onPath.lat, onPath.lon] : null;
-        })()
-      : null;
+  const selectedStopId = selection.type === "stop" ? selection.stopId : null;
+  // Memoized on just the stop id (not `stops`/`routeStopPoints`) so this
+  // only produces a new reference when the *selection* changes -- same
+  // issue as pathBounds above: panning merges newly-loaded stops into
+  // state on every move, which would otherwise recreate this array and
+  // make FlyTo re-fire on every pan, pulling the view back to the stop.
+  // Safe to skip those from the deps: you can only click a marker that's
+  // already rendered, so its coordinates are already present at select time.
+  const flyTarget: [number, number] | null = useMemo(() => {
+    if (!selectedStopId) return null;
+    const cached = stops.find((st) => st.stop_id === selectedStopId);
+    if (cached) return [cached.lat, cached.lon];
+    const onPath = routeStopPoints.find((p) => p.stopId === selectedStopId);
+    return onPath ? [onPath.lat, onPath.lon] : null;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedStopId]);
 
   function selectStop(stopId: string, stopName: string) {
     setSelection({ type: "stop", stopId, stopName });
