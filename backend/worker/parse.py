@@ -6,7 +6,7 @@ real sample messages (see samples/FINDINGS.md and tests/test_parse.py).
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date, datetime, time, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 # GTFS stop_times are local wall-clock times for the agency, not UTC.
@@ -78,6 +78,33 @@ def local_datetime(service_date: date, t: time) -> datetime:
     """Combine a GTFS service date and a local wall-clock time into a
     timezone-aware datetime, comparable to a predicted time (a UTC epoch)."""
     return datetime.combine(service_date, t, tzinfo=LOCAL_TZ)
+
+
+def nearest_scheduled_datetime(
+    predicted_time: datetime, service_date: date, candidates: list[time]
+) -> datetime | None:
+    """Pick whichever (candidate time-of-day, calendar day) combination
+    falls closest to predicted_time.
+
+    GTFS attributes a whole overnight trip to the day it *started* -- a stop
+    visited at 2am still carries the previous day's service_date. Blindly
+    combining service_date with a matched time-of-day breaks for exactly
+    those stops: the schedule lands on the wrong calendar day, producing a
+    ~24h phantom delay (confirmed in production -- see the 86,xxx-second
+    delay_seconds on real rows for overnight trips). Trying both
+    service_date and service_date+1 and keeping whichever is actually
+    closest to the (always-correct, epoch-derived) predicted_time sidesteps
+    needing to parse GTFS's >24h hour convention for arrival times at all.
+    """
+    if not candidates:
+        return None
+
+    options = (
+        local_datetime(service_date + timedelta(days=offset), cand)
+        for cand in candidates
+        for offset in (0, 1)
+    )
+    return min(options, key=lambda dt: abs((dt - predicted_time).total_seconds()))
 
 
 def parse_trip_update(message: dict) -> list[ParsedStopUpdate]:

@@ -26,11 +26,9 @@ from app.db import get_session
 from app.models import Observation, ScheduledDeparture
 from worker.metro_client import BUS_AGENCY
 from worker.parse import (
-    LOCAL_TZ,
     ParsedStopUpdate,
     compute_delay_seconds,
-    local_datetime,
-    nearest_time,
+    nearest_scheduled_datetime,
     parse_trip_update,
 )
 from worker.schedule_cache import ensure_routes_cached, ensure_schedule_cached
@@ -77,12 +75,10 @@ def _upsert_cancellation(session: Session, trip_id: str, route_id: str, observed
 def _upsert_stop_observation(session: Session, update: ParsedStopUpdate, observed_at: datetime) -> bool:
     ensure_schedule_cached(session, update.route_code, update.day_type)
     candidates = _scheduled_candidates(session, update.route_code, update.stop_id, update.day_type)
-    predicted_local_time = update.predicted_time.astimezone(LOCAL_TZ).time()
-    nearest = nearest_time(predicted_local_time, candidates)
-    if nearest is None:
+    scheduled_dt = nearest_scheduled_datetime(update.predicted_time, update.service_date, candidates)
+    if scheduled_dt is None:
         return False
 
-    scheduled_dt = local_datetime(update.service_date, nearest)
     delay = compute_delay_seconds(scheduled_dt, update.predicted_time)
 
     stmt = (

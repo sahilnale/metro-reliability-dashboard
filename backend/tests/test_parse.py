@@ -6,6 +6,7 @@ from worker.parse import (
     epoch_to_utc,
     extract_route_code,
     local_datetime,
+    nearest_scheduled_datetime,
     nearest_time,
     normalize_gtfs_time,
     parse_trip_update,
@@ -224,3 +225,47 @@ def test_local_datetime_is_la_timezone_aware():
     dt = local_datetime(date(2026, 10, 4), time(14, 42, 0))
     assert dt.tzinfo is not None
     assert dt.utcoffset() is not None
+
+
+def test_nearest_scheduled_datetime_same_day():
+    service_date = date(2026, 10, 5)
+    candidates = [time(8, 0, 0), time(14, 42, 0), time(20, 0, 0)]
+    predicted = local_datetime(service_date, time(14, 47, 0))
+
+    result = nearest_scheduled_datetime(predicted, service_date, candidates)
+
+    assert result == local_datetime(service_date, time(14, 42, 0))
+    assert compute_delay_seconds(result, predicted) == 300
+
+
+def test_nearest_scheduled_datetime_handles_overnight_trip():
+    # Reproduces a real production bug: a trip that starts on Oct 5 but
+    # whose stop is actually visited just after midnight on Oct 6 used to
+    # get matched against Oct 5's schedule, producing a ~24h phantom delay.
+    service_date = date(2026, 10, 5)
+    candidates = [time(3, 17, 0)]
+    # The real predicted moment is 03:25 on Oct 6, ~8 minutes after the
+    # 03:17 scheduled time -- but service_date (from the trip's GTFS
+    # startDate) is still Oct 5.
+    predicted = local_datetime(date(2026, 10, 6), time(3, 25, 25))
+
+    result = nearest_scheduled_datetime(predicted, service_date, candidates)
+
+    assert result == local_datetime(date(2026, 10, 6), time(3, 17, 0))
+    assert compute_delay_seconds(result, predicted) == 505  # ~8 min, not ~24h
+
+
+def test_nearest_scheduled_datetime_prefers_same_day_when_closer():
+    service_date = date(2026, 10, 5)
+    candidates = [time(23, 55, 0)]
+    # Predicted just a few minutes after 23:55 on the *same* service_date --
+    # should not jump to service_date+1 just because that's an option.
+    predicted = local_datetime(service_date, time(23, 58, 0))
+
+    result = nearest_scheduled_datetime(predicted, service_date, candidates)
+
+    assert result == local_datetime(service_date, time(23, 55, 0))
+
+
+def test_nearest_scheduled_datetime_empty_candidates():
+    assert nearest_scheduled_datetime(local_datetime(date(2026, 10, 5), time(0, 0)), date(2026, 10, 5), []) is None
