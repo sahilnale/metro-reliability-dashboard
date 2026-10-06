@@ -33,6 +33,7 @@ export default function MapApp() {
   const [selection, setSelection] = useState<Selection>({ type: "none" });
   const [hoveredStopId, setHoveredStopId] = useState<string | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [stopsLoading, setStopsLoading] = useState(false);
   const [routePath, setRoutePath] = useState<RouteDirectionPath[]>([]);
   const [zoom, setZoom] = useState(INITIAL_ZOOM);
 
@@ -120,11 +121,22 @@ export default function MapApp() {
   const panelOpen = selection.type !== "none";
 
   const showZoomHint = selection.type !== "route" && zoom < MIN_STOP_ZOOM;
+  // Only for the very first load, not routine background refreshes after
+  // we already have data -- Render's free API spins down after 15 min
+  // idle, and the first request back can take up to ~a minute to wake it,
+  // so without this the map just looked empty/broken during that window.
+  const isWakingUp = stopsLoading && stops.length === 0;
 
   return (
     <div className="app-shell">
       <div className="map-pane">
         {showZoomHint && <div className="zoom-hint">Zoom in to see stops</div>}
+        {isWakingUp && (
+          <div className="waking-up-banner">
+            <div className="spinner" />
+            Waking up the server — this can take up to a minute on first load
+          </div>
+        )}
         <MapContainer
           center={LA_CENTER}
           zoom={INITIAL_ZOOM}
@@ -137,7 +149,11 @@ export default function MapApp() {
             maxZoom={19}
           />
           <ZoomTracker onZoomChange={setZoom} />
-          <ViewportStopLoader onStopsChange={mergeStops} onError={setLoadError} />
+          <ViewportStopLoader
+            onStopsChange={mergeStops}
+            onError={setLoadError}
+            onLoadingChange={setStopsLoading}
+          />
           {flyTarget && <FlyTo position={flyTarget} />}
           {pathBounds.length > 0 && <FitBounds bounds={pathBounds} />}
           {routePath.map((dir) => (
